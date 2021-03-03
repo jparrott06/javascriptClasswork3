@@ -7,7 +7,7 @@ function searchGoogleBooks() {
         return;
 
     }
-
+    
     document.querySelector("#mainDiv").classList.remove("hasError")
 
     fetch('https://www.googleapis.com/books/v1/volumes?q=' + txtSearch.value +"&startIndex=0&maxResults=20")
